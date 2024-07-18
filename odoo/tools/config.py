@@ -106,7 +106,7 @@ class configmanager(object):
 
         # Server startup config
         group = optparse.OptionGroup(parser, "Common options")
-        group.add_option("-c", "--config", dest="config", help="specify alternate config file")
+        group.add_option("-c", "--config", dest="config", help="specify alternate config file", default='config.conf')
         group.add_option("-s", "--save", action="store_true", dest="save", default=False,
                           help="save configuration to ~/.odoorc (or to ~/.openerp_serverrc if it exists)")
         group.add_option("-i", "--init", dest="init", help="install one or more modules (comma-separated list, use \"all\" for all modules), requires -d")
