@@ -49,3 +49,6 @@ package.json
 /man/
 /share/
 /src/
+
+#env config files
+odoo/tools/config.py
